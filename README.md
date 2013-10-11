@@ -1,4 +1,4 @@
-# DAddYE's dotfiles
+# danamkaplan's dotfiles (Cloned and Edited from https://github.com/daddye/dotfiles)
 
 Here my dotfiles, different than others repos, this is though for people that love hacking vim and osx
 from a terminal.
