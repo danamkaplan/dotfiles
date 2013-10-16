@@ -44,8 +44,8 @@
 [url "git@github.com:/"]
   insteadOf = "gh:/"
 [user]
-	name = Davide D'Agostino
-	email = info@daddye.it
+	name = Dana Kaplan
+	email = danamkaplan@gmail.com
 [push]
 	default = simple
 [gist]

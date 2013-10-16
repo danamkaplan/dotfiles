@@ -93,6 +93,9 @@ export RUBY_HEAP_FREE_MIN=500000
 export RAILS_ENV=development
 export RACK_ENV=development
 
+# Python 
+export PATH=/usr/local/bin:$PATH
+
 # Detective
 [[ `which rbenv` ]] && eval "$(rbenv init -)"
 [[ `which npm` ]]   && eval "$(npm completion -)"
@@ -100,3 +103,4 @@ export RACK_ENV=development
 [[ `which bower` ]] && eval "$(bower completion)"
 [ -f /usr/local/etc/profile.d/z.sh ]  && . /usr/local/etc/profile.d/z.sh
 [ -f /usr/local/share/bash-completion/bash_completion ] && . /usr/local/share/bash-completion/bash_completion
+

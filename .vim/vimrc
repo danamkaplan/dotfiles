@@ -88,8 +88,8 @@ endif
 
 " Colors & C.
 let base16colorspace=256  " Access colors present in 256 colorspace
-set background=light
-colorscheme soda
+set background=dark
+colorscheme base16-solarized
 
 " Make bolds match gui version
 " hi! Statement  cterm=bold
@@ -235,3 +235,10 @@ imap <C-p> <ESC>:CtrlP<CR>
 
 " Use :W! to write to a file using sudo if you forgot to 'sudo vim file'
 ca W! %!sudo tee > /dev/null %
+
+" map CTRL-E to end-of-line (insert mode)
+imap <C-e> <esc>$i<right>
+map <C-e> <esc>$<right>
+" map CTRL-A to beginning-of-line (insert mode)
+imap <C-a> <esc>0i
+map <C-a> <esc>0
