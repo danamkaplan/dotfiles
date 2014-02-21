@@ -61,10 +61,11 @@ export GOPATH="/usr/src/go"
 export HTTP_CLIENT="wget --no-check-certificate -O" # or
 export HTTP_CLIENT="curl --insecure -f -L -o"
 
-if [[ `which drip` ]]; then
-  export JAVACMD=$(which drip)
-  export LEIN_JAVA_CMD=$JAVACMD
-fi
+#Dunno what this does, leaving off for now
+#if [[ `which drip` ]]; then
+#  export JAVACMD=$(which drip)
+#  export LEIN_JAVA_CMD=$JAVACMD
+#fi
 
 # RBX
 export RBXOPT=-X19
@@ -96,11 +97,11 @@ export RACK_ENV=development
 # Python 
 export PATH=/usr/local/bin:$PATH
 
-# Detective
-[[ `which rbenv` ]] && eval "$(rbenv init -)"
-[[ `which npm` ]]   && eval "$(npm completion -)"
-[[ `which grunt` ]] && eval "$(grunt --completion=bash)"
-[[ `which bower` ]] && eval "$(bower completion)"
-[ -f /usr/local/etc/profile.d/z.sh ]  && . /usr/local/etc/profile.d/z.sh
-[ -f /usr/local/share/bash-completion/bash_completion ] && . /usr/local/share/bash-completion/bash_completion
+# Detective: again, don't understand
+#[[ `which rbenv` ]] && eval "$(rbenv init -)"
+#[[ `which npm` ]]   && eval "$(npm completion -)"
+#[[ `which grunt` ]] && eval "$(grunt --completion=bash)"
+#[[ `which bower` ]] && eval "$(bower completion)"
+#[ -f /usr/local/etc/profile.d/z.sh ]  && . /usr/local/etc/profile.d/z.sh
+#[ -f /usr/local/share/bash-completion/bash_completion ] && . /usr/local/share/bash-completion/bash_completion
 

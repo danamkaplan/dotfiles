@@ -89,7 +89,7 @@ endif
 " Colors & C.
 let base16colorspace=256  " Access colors present in 256 colorspace
 set background=dark
-colorscheme base16-solarized
+colorscheme solarized
 
 " Make bolds match gui version
 " hi! Statement  cterm=bold
@@ -242,3 +242,6 @@ map <C-e> <esc>$<right>
 " map CTRL-A to beginning-of-line (insert mode)
 imap <C-a> <esc>0i
 map <C-a> <esc>0
+
+" Press i to enter insert mode, and ii to exit.
+:imap ii <Esc>
