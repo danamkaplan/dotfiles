@@ -82,9 +82,9 @@ set ttimeout
 set ttimeoutlen=10
 
 " Write better
-if exists("&cc")
-  set cc=100
-endif
+"if exists("&cc")
+"  set cc=100
+"endif
 
 " Colors & C.
 let base16colorspace=256  " Access colors present in 256 colorspace

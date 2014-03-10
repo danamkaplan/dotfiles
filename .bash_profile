@@ -105,3 +105,4 @@ export PATH=/usr/local/bin:$PATH
 #[ -f /usr/local/etc/profile.d/z.sh ]  && . /usr/local/etc/profile.d/z.sh
 #[ -f /usr/local/share/bash-completion/bash_completion ] && . /usr/local/share/bash-completion/bash_completion
 
+export PATH=/usr/local/bin:$PATH
