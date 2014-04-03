@@ -106,3 +106,6 @@ export PATH=/usr/local/bin:$PATH
 #[ -f /usr/local/share/bash-completion/bash_completion ] && . /usr/local/share/bash-completion/bash_completion
 
 export PATH=/usr/local/bin:$PATH
+
+# added by Anaconda 1.9.1 installer
+export PATH="/Users/dana/anaconda/bin:$PATH"
