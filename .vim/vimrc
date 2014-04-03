@@ -233,6 +233,9 @@ imap <C-k> <ESC>:CtrlPBuffer<CR>
 " Standard CtrlP also in insert mode
 imap <C-p> <ESC>:CtrlP<CR>
 
+" Set no max file limit
+let g:ctrlp_max_files = 0
+
 " Use :W! to write to a file using sudo if you forgot to 'sudo vim file'
 ca W! %!sudo tee > /dev/null %
 
@@ -245,3 +248,6 @@ map <C-a> <esc>0
 
 " Press i to enter insert mode, and ii to exit.
 :imap ii <Esc>
+
+" Make *.q syntax look like SQL
+au BufNewFile,BufRead,BufReadPost *.q set syntax=SQL
