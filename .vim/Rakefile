@@ -48,6 +48,7 @@ bundle 'protobuf',      'uarun/vim-protobuf'
 bundle 'base16',        'chriskempson/base16-vim'
 bundle 'fish',          'Soares/fish.vim'
 bundle 'nimrod',        'zah/nimrod.vim'
+bundle 'solarized',     'altercation/vim-colors-solarized'
 
 bundle 'ar.snippets' do
   sh 'mkdir -p snippets/ruby'
