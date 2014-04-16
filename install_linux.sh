@@ -24,7 +24,7 @@ cd ~/.vim
 
 for vimfile in Rakefile bundle.rb vimrc gvimrc; do
   echo "> Installing ~/.vim/$vimfile"
-  curl -sO https://raw.github.com/danamkaplan/dotfiles/master/.vim/$vimfile
+  curl -sO https://raw.github.com/DAddYE/dotfiles/master/.vim/$vimfile
 done
 
 echo "> Setup vim"

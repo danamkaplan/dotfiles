@@ -6,3 +6,5 @@ export PIP_REQUIRE_VIRTUALENV=true
 export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 
 export GOPATH=$HOME/go/
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
