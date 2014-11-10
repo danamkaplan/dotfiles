@@ -7,4 +7,4 @@ export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache
 
 export GOPATH=$HOME/go/
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
