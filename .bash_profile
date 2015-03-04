@@ -110,7 +110,7 @@ export PATH=/usr/local/bin:$PATH
 # added by Anaconda 1.9.1 installer
 export PATH="/Users/dana/anaconda/bin:$PATH"
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
 # added by Anaconda 1.9.2 installer
 export PATH="/Users/dana/anaconda/bin:$PATH"
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
