@@ -1,4 +1,9 @@
-set nocompatible
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+"""""""""""""""""""""""""""""""
+" Cosmetic Changes
+"""""""""""""""""""""""""""""""
 syntax on
 set nospell
 set number
@@ -35,8 +40,87 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-set laststatus=2
+set laststatus=2"
 
+
+
+"""""""""""""""""""""""""""""""
+" Vundle Plugin Management
+"""""""""""""""""""""""""""""""
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'mileszs/ack.vim'
+Plugin 'tpope/vim-haml'
+Plugin 'pangloss/vim-javascript'
+Plugin 'tpope/vim-commentary'
+Plugin 'ervandew/supertab'
+Plugin 'tpope/vim-cucumber'
+Plugin 'timcharper/textile.vim'
+Plugin 'msanders/snipmate.vim'
+Plugin 'tpope/vim-endwise'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'wavded/vim-stylus'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-fugitive'
+Plugin 'godlygeek/tabular'
+Plugin 'tpope/vim-surround'
+Plugin 'groenewege/vim-less'
+Plugin 'davidoc/taskpaper.vim'
+Plugin 'sunaku/vim-ruby-minitest'
+Plugin 'blueyed/ZoomWin'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'majutsushi/tagbar'
+Plugin 'sjl/vitality.vim'
+Plugin 'kana/vim-smartinput'
+Plugin 'evanmiller/nginx-vim-syntax'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'tpope/vim-rails'
+Plugin 'jnwhiteh/vim-golang'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'DAddYE/soda.vim'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'guns/vim-clojure-static'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-fireplace'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'Shougo/neocomplcache'
+Plugin 'uarun/vim-protobuf'
+Plugin 'chriskempson/base16-vim'
+Plugin 'Soares/fish.vim'
+Plugin 'zah/nimrod.vim'
+Plugin 'altercation/vim-colors-solarized'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+
+"""""""""""""""""""""""""""""""
+" From the old vimrc (working through it)
+"""""""""""""""""""""""""""""""
 set clipboard+=unnamed " Share your clipboard with system
 set mouse=a            " Make mouse working!
 set modeline
@@ -88,6 +172,7 @@ set ttimeoutlen=10
 
 " Colors & C.
 let base16colorspace=256  " Access colors present in 256 colorspace
+let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
 
@@ -189,7 +274,7 @@ let NERDTreeChDirMode   = 0
 let NERDTreeIgnore      = ['\.pyc$', '\.rbc$', '\~$']
 let NERDTreeHijackNetrw = 0
 let g:nerdtree_tabs_startup_cd = 0
-" let g:nerdtree_tabs_open_on_console_startup=0
+let g:nerdtree_tabs_open_on_console_startup=0
 " ca cd NERDTree
 
 " Macvim from here
@@ -246,7 +331,7 @@ map <C-e> <esc>$<right>
 imap <C-a> <esc>0i
 map <C-a> <esc>0
 
-" Press i to enter insert mode, and ii to exit.
+" Press i to enter insert mode, and jk to exit.
 :imap jk <Esc>
 
 " Make *.q syntax look like SQL
